@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BongoPlanet | Tanzania entertainment and lifestyle</title>
+<meta name="description" content="Music, film, nightlife and the good life across Tanzania, from Dar es Salaam to Zanzibar.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23C9A24B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0C1E22;--deep:#122B30;--tanz:#5B4B9A;--gold:#C9A24B;--pearl:#F4F1EC;--mist:#A9B8B6;--serif:"Cormorant Garamond",Georgia,serif;--sans:Jost,system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--pearl);font:400 1.05rem/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;line-height:1.02}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.5rem}
+header.top{position:absolute;inset:0 0 auto;z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+.logo{font:600 1.7rem var(--serif);text-decoration:none;letter-spacing:.01em}
+.logo i{color:var(--gold)}
+nav ul{display:flex;gap:1.8rem;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;font-size:.95rem;color:var(--pearl);opacity:.85}
+nav ul a:hover{color:var(--gold);opacity:1}
+/* hero */
+.hero{position:relative;min-height:100svh;overflow:hidden;display:flex;align-items:flex-end;background:radial-gradient(120% 80% at 70% 30%,#2B2358 0%,var(--night) 62%)}
+.sun{position:absolute;right:max(-8rem,-8vw);top:14%;width:min(52vw,34rem);aspect-ratio:1;border-radius:50%;background:linear-gradient(180deg,var(--gold) 15%,#D9826F 55%,#7E63C2 100%);animation:rise 2.2s cubic-bezier(.2,.7,.2,1) both}
+.sun::after{content:"";position:absolute;inset:48% 0 0;border-radius:0 0 50% 50%;background:repeating-linear-gradient(180deg,transparent 0 6px,var(--night) 6px 9px,transparent 9px 18px,var(--night) 18px 24px)}
+@keyframes rise{from{transform:translateY(5rem);opacity:0}}
+.hero .wrap{position:relative;padding-bottom:5rem;padding-top:9rem}
+.hero h1{font-size:clamp(3.4rem,11vw,8.5rem);letter-spacing:-.02em}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{max-width:30rem;font-size:1.2rem;color:var(--mist);margin:1.5rem 0 2rem}
+.btn{display:inline-block;padding:.9rem 2rem;border:1px solid var(--gold);color:var(--pearl);text-decoration:none;font-weight:500;background:none;font-family:var(--sans);font-size:1rem;cursor:pointer;transition:background .25s,color .25s}
+.btn.fill,.btn:hover{background:var(--gold);color:var(--night)}
+.btn.fill:hover{background:var(--pearl);border-color:var(--pearl)}
+.btn+.btn{margin-left:.75rem}
+section{padding:6rem 0}
+h2{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:.75rem}
+.lead{color:var(--mist);max-width:34rem;margin:0 0 3rem}
+/* features */
+.feat{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:1.25rem;min-height:34rem}
+.card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:1.75rem;overflow:hidden;text-decoration:none;min-height:15rem}
+.card:first-child{grid-row:span 2}
+.card::before{content:"";position:absolute;inset:0;transition:transform .6s}
+.card:hover::before{transform:scale(1.05)}
+.card>*{position:relative}
+.card h3{font-size:clamp(1.7rem,3vw,2.5rem)}
+.card span{font-size:.92rem;color:#fff;opacity:.85;margin-top:.5rem}
+.c1::before{background:linear-gradient(160deg,transparent 30%,rgba(12,30,34,.85)),radial-gradient(circle at 70% 25%,var(--gold) 0 14%,#D9826F 15% 30%,transparent 31%),linear-gradient(#5B4B9A,#2B2358)}
+.c2::before{background:linear-gradient(transparent 20%,rgba(12,30,34,.85)),linear-gradient(135deg,#1F6F6B,#0F3B3F)}
+.c3::before{background:linear-gradient(transparent 20%,rgba(12,30,34,.85)),linear-gradient(135deg,#8E6FD0,#4B3F8F)}
+/* events */
+.light{background:var(--pearl);color:var(--night)}
+.light .lead{color:#4A5B5C}
+.tabs{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;margin-bottom:1.5rem}
+.tab{background:none;border:0;border-bottom:2px solid transparent;color:#4A5B5C;font:500 1rem var(--sans);padding:.3rem 0;cursor:pointer}
+.tab[aria-pressed="true"]{color:var(--night);border-color:var(--tanz)}
+.ev{display:grid;grid-template-columns:5.5rem 1fr auto;gap:1.5rem;align-items:center;padding:1.4rem 0;border-top:1px solid #D8D2C7}
+.ev:last-child{border-bottom:1px solid #D8D2C7}
+.ev b{font:500 3rem/1 var(--serif);color:var(--tanz)}
+.ev b small{display:block;font:500 .9rem var(--sans);color:#4A5B5C;margin-top:.25rem}
+.ev h3{font-size:1.9rem}
+.ev p{margin:.2rem 0 0;color:#4A5B5C}
+.ev em{font:italic 500 1.3rem var(--serif);color:var(--tanz)}
+/* music */
+.music{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+ol{list-style:none;margin:0;padding:0;counter-reset:n}
+ol li{counter-increment:n;display:grid;grid-template-columns:3rem 1fr;align-items:baseline;padding:1.1rem 0;border-bottom:1px solid #24413F}
+ol li::before{content:counter(n);font:500 2.2rem var(--serif);color:var(--gold)}
+ol b{font:500 1.6rem var(--serif);display:block}
+ol span{color:var(--mist);font-size:.95rem}
+.quote{font:italic 500 clamp(1.8rem,3.5vw,2.6rem)/1.2 var(--serif);border-left:2px solid var(--gold);padding-left:1.5rem}
+.quote small{display:block;font:400 1rem var(--sans);color:var(--mist);margin-top:1rem}
+/* life */
+.life{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+.life h3{font-size:2rem;margin-bottom:.5rem;padding-top:1rem;border-top:2px solid var(--tanz)}
+.life p{margin:0;color:#4A5B5C}
+/* join */
+.join{background:linear-gradient(120deg,var(--tanz),#2B2358);text-align:center}
+.join p{margin:0 auto 2rem;color:#E4DEF6;max-width:30rem}
+form{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+input[type=email]{flex:1 1 17rem;max-width:24rem;padding:.9rem 1.2rem;background:rgba(255,255,255,.08);border:1px solid var(--gold);color:#fff;font:inherit}
+input::placeholder{color:#CFC8EA}
+.hp{display:none}
+#msg{min-height:1.6rem;margin-top:1rem;color:var(--gold);font-weight:500}
+footer{padding:3rem 0;color:var(--mist);font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer a{color:var(--gold)}
+@media(max-width:48rem){nav ul{display:none}.feat,.music,.life{grid-template-columns:1fr}.feat{grid-template-rows:auto}.card:first-child{grid-row:auto}.ev{grid-template-columns:4rem 1fr}.ev em{grid-column:2}.sun{width:75vw;top:10%}section{padding:4rem 0}.btn+.btn{margin:.75rem 0 0}}
+@media(prefers-reduced-motion:reduce){.sun{animation:none}.card::before{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><nav>
+<a class="logo" href="#top">Bongo<i>Planet</i></a>
+<ul><li><a href="#stories">Stories</a></li><li><a href="#events">Events</a></li><li><a href="#music">Music</a></li><li><a href="mtaani-dictionary.html">Dictionary</a></li><li><a href="#life">Lifestyle</a></li><li><a href="#join">Newsletter</a></li></ul>
+</nav></div></header>
+
+<main id="top">
+<div class="hero">
+<div class="sun" aria-hidden="true"></div>
+<div class="wrap">
+<h1>Where Tanzania<br>comes to <em>play.</em></h1>
+<p>Music, film, nightlife and the good life, from Dar es Salaam to Zanzibar.</p>
+<a class="btn fill" href="#events">Explore events</a><a class="btn" href="#join">Join the list</a>
+</div>
+</div>
+
+<section id="stories"><div class="wrap">
+<h2>Stories worth your time</h2>
+<p class="lead">Profiles, scenes and city guides from people who live it.</p>
+<div class="feat">
+<a class="card c1" href="bongo-101.html"><h3>Bongo 101: a beginner’s guide to Tanzania’s sound</h3><span>Guide · 8 min read</span></a>
+<a class="card c2" href="richest-stars.html"><h3>Tanzania’s richest music stars, ranked</h3><span>Music · Estimated net worth</span></a>
+<a class="card c3" href="richest-actors.html"><h3>Tanzania’s richest actors, ranked</h3><span>Film · Estimated net worth</span></a>
+</div>
+</div></section>
+
+<section id="posts" class="posts" hidden><div class="wrap"><h2>Fresh from BongoPlanet</h2><div class="pg" id="pg"></div></div></section>
+
+<section class="dict"><div class="wrap">
+<div><h2>The Mtaani Dictionary</h2><p>Learn the street Swahili you hear in songs and on the corner. Search, share and add your own words.</p><a class="btn fill" href="mtaani-dictionary.html">Open the dictionary</a></div>
+<div class="big">Mambo vipi? Poa. Safi. Noma.</div>
+</div></section>
+
+<section id="events" class="light"><div class="wrap">
+<h2>On this week</h2>
+<p class="lead">Concerts, film nights and festivals. Choose your city.</p>
+<div class="tabs" id="tabs" role="group" aria-label="Filter events by city"></div>
+<div id="list" aria-live="polite"></div>
+</div></section>
+
+<section id="music"><div class="wrap music">
+<div>
+<h2>The Bongo Five</h2>
+<p class="lead">This week’s most played.</p>
+<ol>
+<li><div><b>Usiku wa Pwani</b><span>Neema K. · Bongo Flava</span></div></li>
+<li><div><b>Kasi Kasi</b><span>DJ Mtaani · Singeli</span></div></li>
+<li><div><b>Mawimbi</b><span>Zuhura &amp; Band · Taarab fusion</span></div></li>
+<li><div><b>Dar Ni Yetu</b><span>Kito · Hip-hop</span></div></li>
+<li><div><b>Moyo Wangu</b><span>Baraka J. · Bongo Flava</span></div></li>
+</ol>
+</div>
+<div class="quote">“Bongo is not a genre, it’s a city talking back to itself.”<small>A line from our editor’s desk</small></div>
+</div></section>
+
+<section id="life" class="light"><div class="wrap">
+<h2>The good life</h2>
+<p class="lead">Eat, dress and travel the way locals do.</p>
+<div class="life">
+<div><h3>Table</h3><p>Mishkaki at midnight, urojo at noon, and the coastal kitchens worth a detour.</p></div>
+<div><h3>Wardrobe</h3><p>Kitenge and kanga reimagined by Tanzanian designers for the city and the beach.</p></div>
+<div><h3>Escape</h3><p>Dhow sunsets, Stone Town evenings and weekends that feel like a week away.</p></div>
+</div>
+</div></section>
+
+<section id="join" class="join"><div class="wrap">
+<h2>Friday, in your inbox</h2>
+<p>The week’s best events, new releases and city picks. One email, no noise.</p>
+<form name="newsletter" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" id="f">
+<input type="hidden" name="form-name" value="newsletter">
+<p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+<input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
+<button class="btn fill" type="submit">Subscribe</button>
+</form>
+<div id="msg" role="status"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<span>© 2026 BongoPlanet. Sample content shown.</span>
+<span>Advertise or list your event: <a href="mailto:iamisaacjob@gmail.com">iamisaacjob@gmail.com</a></span>
+</div></footer>
+
+<script>
+var EV=[
+{c:"Dar es Salaam",d:"28",m:"Fri",t:"Bongo Flava Live",p:"Four artists, one open-air stage by the harbour.",e:"7 pm"},
+{c:"Dar es Salaam",d:"29",m:"Sat",t:"Singeli Night",p:"Fast beats and street dance crews in Kinondoni.",e:"9 pm"},
+{c:"Zanzibar",d:"29",m:"Sat",t:"Taarab on the Terrace",p:"Sunset orchestra in Stone Town.",e:"6 pm"},
+{c:"Zanzibar",d:"30",m:"Sun",t:"Beach Film Screening",p:"A Swahili classic under the stars.",e:"4 pm"},
+{c:"Arusha",d:"28",m:"Fri",t:"Comedy at the Clocktower",p:"Stand-up in Swahili and English.",e:"8 pm"},
+{c:"Mwanza",d:"29",m:"Sat",t:"Lake Zone Food Fest",p:"Fresh tilapia, live DJs and local makers.",e:"5 pm"}
+];
+var cities=["All cities"].concat(EV.map(function(e){return e.c}).filter(function(v,i,a){return a.indexOf(v)===i}));
+var sel=cities[0],tabs=document.getElementById("tabs"),list=document.getElementById("list");
+function draw(){
+tabs.innerHTML="";
+cities.forEach(function(c){var b=document.createElement("button");b.className="tab";b.textContent=c;b.setAttribute("aria-pressed",c===sel);b.onclick=function(){sel=c;draw()};tabs.appendChild(b)});
+list.innerHTML=EV.filter(function(e){return sel===cities[0]||e.c===sel}).map(function(e){return '<div class="ev"><b>'+e.d+'<small>'+e.m+'</small></b><div><h3>'+e.t+'</h3><p>'+e.p+' '+e.c+'.</p></div><em>'+e.e+'</em></div>'}).join("");
+}
+draw();
+fetch("events.json").then(function(r){return r.json()}).then(function(j){if(!j.events||!j.events.length)return;EV=j.events.map(function(e){return {c:e.city,d:e.day,m:e.weekday,t:e.title,p:e.description,e:e.time}});cities=["All cities"].concat(EV.map(function(e){return e.c}).filter(function(v,i,a){return a.indexOf(v)===i}));sel=cities[0];draw()}).catch(function(){});
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+fetch("posts.json").then(function(r){return r.json()}).then(function(j){var p=(j.posts||[]).slice().sort(function(a,b){return new Date(b.date)-new Date(a.date)}).slice(0,3);if(!p.length)return;document.getElementById("pg").innerHTML=p.map(function(x){return '<a class="pc" href="post.html?p='+encodeURIComponent(x.slug)+'"><small>'+esc(x.category||"")+'</small><h3>'+esc(x.title)+'</h3><p>'+esc(x.summary||"")+'</p></a>'}).join("");document.getElementById("posts").hidden=false}).catch(function(){});
+</script>
+</body>
+</html>

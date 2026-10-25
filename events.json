@@ -1,0 +1,52 @@
+{
+ "events": [
+  {
+   "city": "Dar es Salaam",
+   "day": "28",
+   "weekday": "Fri",
+   "title": "Bongo Flava Live",
+   "description": "Four artists, one open-air stage by the harbour.",
+   "time": "7 pm"
+  },
+  {
+   "city": "Dar es Salaam",
+   "day": "29",
+   "weekday": "Sat",
+   "title": "Singeli Night",
+   "description": "Fast beats and street dance crews in Kinondoni.",
+   "time": "9 pm"
+  },
+  {
+   "city": "Zanzibar",
+   "day": "29",
+   "weekday": "Sat",
+   "title": "Taarab on the Terrace",
+   "description": "Sunset orchestra in Stone Town.",
+   "time": "6 pm"
+  },
+  {
+   "city": "Zanzibar",
+   "day": "30",
+   "weekday": "Sun",
+   "title": "Beach Film Screening",
+   "description": "A Swahili classic under the stars.",
+   "time": "4 pm"
+  },
+  {
+   "city": "Arusha",
+   "day": "28",
+   "weekday": "Fri",
+   "title": "Comedy at the Clocktower",
+   "description": "Stand-up in Swahili and English.",
+   "time": "8 pm"
+  },
+  {
+   "city": "Mwanza",
+   "day": "29",
+   "weekday": "Sat",
+   "title": "Lake Zone Food Fest",
+   "description": "Fresh tilapia, live DJs and local makers.",
+   "time": "5 pm"
+  }
+ ]
+}

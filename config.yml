@@ -1,0 +1,70 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+locale: "en"
+
+collections:
+  - name: "posts"
+    label: "Stories and posts"
+    files:
+      - name: "posts"
+        label: "All posts"
+        file: "posts.json"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Web address word (lowercase letters, numbers and dashes only)"
+                name: "slug"
+                widget: "string"
+                pattern: ["^[a-z0-9-]+$", "Use lowercase letters, numbers and dashes only"]
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Category", name: "category", widget: "string", required: false }
+              - { label: "Short summary", name: "summary", widget: "text" }
+              - { label: "Cover image (optional)", name: "image", widget: "image", required: false }
+              - { label: "Story", name: "body", widget: "markdown" }
+
+  - name: "events"
+    label: "Events"
+    files:
+      - name: "events"
+        label: "This week’s events"
+        file: "events.json"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.title}} ({{fields.city}})"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "City", name: "city", widget: "string", hint: "For example Dar es Salaam, Zanzibar, Arusha, Mwanza" }
+              - { label: "Day number", name: "day", widget: "string", hint: "For example 28" }
+              - { label: "Weekday", name: "weekday", widget: "string", hint: "For example Fri" }
+              - { label: "Time", name: "time", widget: "string", hint: "For example 7 pm" }
+              - { label: "Short description", name: "description", widget: "string" }
+
+  - name: "dictionary"
+    label: "Mtaani Dictionary"
+    files:
+      - name: "dictionary"
+        label: "Dictionary words"
+        file: "dictionary.json"
+        fields:
+          - label: "Words"
+            name: "words"
+            widget: "list"
+            summary: "{{fields.word}}"
+            fields:
+              - { label: "Word or phrase", name: "word", widget: "string" }
+              - { label: "Type", name: "type", widget: "string", hint: "noun, verb, adjective, phrase, greeting..." }
+              - { label: "Category", name: "category", widget: "select", options: ["Greetings", "People", "Hustle", "Vibes", "Streets"] }
+              - { label: "Meaning", name: "meaning", widget: "text" }
+              - { label: "Example sentence (Swahili)", name: "example", widget: "string" }
+              - { label: "Example in English", name: "translation", widget: "string" }

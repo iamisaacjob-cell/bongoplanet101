@@ -1,0 +1,196 @@
+{
+ "words": [
+  {
+   "word": "Mambo?",
+   "type": "greeting",
+   "category": "Greetings",
+   "meaning": "“What’s up?” A friendly everyday hello among friends.",
+   "example": "Mambo vipi?",
+   "translation": "How’s it going?"
+  },
+  {
+   "word": "Poa",
+   "type": "reply",
+   "category": "Greetings",
+   "meaning": "Cool, fine, okay. The usual answer to “Mambo?”",
+   "example": "Mambo? Poa!",
+   "translation": "What’s up? All good!"
+  },
+  {
+   "word": "Safi",
+   "type": "adjective",
+   "category": "Greetings",
+   "meaning": "Literally “clean”. Used to mean excellent or all good.",
+   "example": "Safi sana, asante.",
+   "translation": "Very good, thanks."
+  },
+  {
+   "word": "Freshi",
+   "type": "adjective",
+   "category": "Greetings",
+   "meaning": "Fresh and fine. Says you are in a good place.",
+   "example": "Niko freshi.",
+   "translation": "I’m good."
+  },
+  {
+   "word": "Shwari",
+   "type": "adjective",
+   "category": "Greetings",
+   "meaning": "Calm and peaceful. A relaxed way to say everything is well.",
+   "example": "Mambo? Shwari.",
+   "translation": "What’s up? Calm, all good."
+  },
+  {
+   "word": "Tupo pamoja",
+   "type": "phrase",
+   "category": "Greetings",
+   "meaning": "“We are together.” I’m with you, count me in.",
+   "example": "Usijali, tupo pamoja.",
+   "translation": "Don’t worry, we’re together."
+  },
+  {
+   "word": "Mshikaji",
+   "type": "noun",
+   "category": "People",
+   "meaning": "A friend or buddy.",
+   "example": "Huyu ni mshikaji wangu.",
+   "translation": "This is my buddy."
+  },
+  {
+   "word": "Mwana",
+   "type": "noun",
+   "category": "People",
+   "meaning": "A casual way to address a friend, like “bro”.",
+   "example": "Mwana, njoo hapa.",
+   "translation": "Bro, come here."
+  },
+  {
+   "word": "Mzee",
+   "type": "noun",
+   "category": "People",
+   "meaning": "An elder, and a warm, respectful way to address a man or a father.",
+   "example": "Mzee wangu yuko nyumbani.",
+   "translation": "My dad is at home."
+  },
+  {
+   "word": "Msela",
+   "type": "noun",
+   "category": "People",
+   "meaning": "A tough, street-smart and stylish guy.",
+   "example": "Yule jamaa ni msela kweli.",
+   "translation": "That guy is truly cool."
+  },
+  {
+   "word": "Mjanja",
+   "type": "adjective",
+   "category": "People",
+   "meaning": "Clever and street-smart. Quick wits are what Bongo is all about.",
+   "example": "Kijana huyu ni mjanja.",
+   "translation": "This young man is smart."
+  },
+  {
+   "word": "Mchongo",
+   "type": "noun",
+   "category": "Hustle",
+   "meaning": "A deal, plan or opportunity, often one that makes money.",
+   "example": "Nina mchongo mpya.",
+   "translation": "I have a new plan."
+  },
+  {
+   "word": "Bangaiza",
+   "type": "verb",
+   "category": "Hustle",
+   "meaning": "To hustle: to take whatever work comes up to earn a living.",
+   "example": "Anabangaiza mjini.",
+   "translation": "He hustles in the city."
+  },
+  {
+   "word": "Misheni",
+   "type": "noun",
+   "category": "Hustle",
+   "meaning": "A mission or errand, often a hustle you are chasing.",
+   "example": "Nina misheni leo.",
+   "translation": "I have a mission today."
+  },
+  {
+   "word": "Dili",
+   "type": "noun",
+   "category": "Hustle",
+   "meaning": "A deal or arrangement, from the English word “deal”.",
+   "example": "Tuna dili kubwa.",
+   "translation": "We have a big deal."
+  },
+  {
+   "word": "Piga debe",
+   "type": "phrase",
+   "category": "Hustle",
+   "meaning": "Literally “hit the tin”. To call out for passengers or customers, or to hype something up.",
+   "example": "Konda anapiga debe stendi.",
+   "translation": "The conductor is calling for passengers at the stand."
+  },
+  {
+   "word": "Jiti",
+   "type": "noun",
+   "category": "Hustle",
+   "meaning": "Slang for one hundred shillings.",
+   "example": "Nipe jiti mbili.",
+   "translation": "Give me two hundred shillings."
+  },
+  {
+   "word": "Noma",
+   "type": "adjective",
+   "category": "Vibes",
+   "meaning": "Awesome, intense, impressive. It can also mean trouble, so tone matters.",
+   "example": "Ngoma hii ni noma!",
+   "translation": "This song is amazing!"
+  },
+  {
+   "word": "Ngoma",
+   "type": "noun",
+   "category": "Vibes",
+   "meaning": "Besides drum and dance, slang for a song or track.",
+   "example": "Ngoma mpya imetoka.",
+   "translation": "A new track is out."
+  },
+  {
+   "word": "Kula bata",
+   "type": "phrase",
+   "category": "Vibes",
+   "meaning": "To enjoy yourself: relax, have fun, go out.",
+   "example": "Wikendi tunakula bata.",
+   "translation": "This weekend we’re having fun."
+  },
+  {
+   "word": "Kijiwe",
+   "type": "noun",
+   "category": "Streets",
+   "meaning": "A hangout spot where friends gather to talk. Literally “little stone”.",
+   "example": "Tukutane kijiweni.",
+   "translation": "Let’s meet at the hangout."
+  },
+  {
+   "word": "Kitaa",
+   "type": "noun",
+   "category": "Streets",
+   "meaning": "The neighbourhood, the streets, the hood.",
+   "example": "Nilikulia kitaa.",
+   "translation": "I grew up in the neighbourhood."
+  },
+  {
+   "word": "Mtaani",
+   "type": "adverb",
+   "category": "Streets",
+   "meaning": "In the neighbourhood or on the street.",
+   "example": "Habari za mtaani?",
+   "translation": "What’s the news around the neighbourhood?"
+  },
+  {
+   "word": "Daladala",
+   "type": "noun",
+   "category": "Streets",
+   "meaning": "A minibus used for city transport in Tanzania.",
+   "example": "Nilipanda daladala.",
+   "translation": "I took a minibus."
+  }
+ ]
+}
